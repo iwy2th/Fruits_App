@@ -51,7 +51,7 @@ struct FruitDetailView: View {
       }//: SCROLL VIEW
       .ignoresSafeArea()
     } //: NAVIGATION
-
+    .navigationViewStyle(StackNavigationViewStyle())
   }
 }
 // MARK: - PREVIEW
