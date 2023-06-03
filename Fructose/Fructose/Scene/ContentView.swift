@@ -7,17 +7,27 @@
 
 import SwiftUI
 struct ContentView: View {
-  // MARK: - PROPERTY
-
+  // MARK: - PROPERTIES
+  @AppStorage("isOnboarding") var isOnboarding: Bool?
+  var fruits: [FruitModel] = FruitsData
+  // MARK: - BODY
 
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+      NavigationView {
+        List {
+          ForEach(fruits.shuffled()) { item in
+            FruitRowView(fruit: item)
+              .padding(.vertical, 4)
+              .onTapGesture {
+                isOnboarding = true
+              }
+          }
         }
-        .padding()
+        .navigationTitle("Fruits")
+        .navigationBarTitleDisplayMode(.large)
+      }//: NAVIGATION
+
+
     }
 }
 // MARK: - PREVIEW
