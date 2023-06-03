@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
+  // MARK: - PROPERTY
+
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -18,7 +20,7 @@ struct ContentView: View {
         .padding()
     }
 }
-
+// MARK: - PREVIEW
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
