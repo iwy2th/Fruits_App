@@ -64,7 +64,7 @@
 				7287BD2D2A2AFE7100C45996 /* Model */,
 				7287BD362A2B37CF00C45996 /* Data */,
 				7287BD2C2A2AFE6700C45996 /* Views */,
-				7287BD2B2A2AFE1700C45996 /* Screen */,
+				7287BD2B2A2AFE1700C45996 /* Scene */,
 				7287BD212A2AF96E00C45996 /* Assets.xcassets */,
 				7287BD232A2AF96E00C45996 /* Preview Content */,
 			);
@@ -79,14 +79,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7287BD2B2A2AFE1700C45996 /* Screen */ = {
+		7287BD2B2A2AFE1700C45996 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
 				7287BD1D2A2AF96E00C45996 /* FructoseApp.swift */,
 				7287BD1F2A2AF96E00C45996 /* ContentView.swift */,
 				7287BD322A2B067C00C45996 /* OnboardingView.swift */,
 			);
-			path = Screen;
+			path = Scene;
 			sourceTree = "<group>";
 		};
 		7287BD2C2A2AFE6700C45996 /* Views */ = {

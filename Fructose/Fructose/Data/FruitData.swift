@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 // MARK: - FruitModelDATA
 
 let FruitsData: [FruitModel] = [
