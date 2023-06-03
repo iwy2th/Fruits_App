@@ -17,7 +17,7 @@ struct SettingsView: View {
         VStack(spacing: 20) {
           // MARK: - SECTION 1
           GroupBox(label:
-            SettingsLableView(labelText: "FRUCTUS", labelImage: "info.circle")
+            SettingsLabelView(labelText: "FRUCTUS", labelImage: "info.circle")
           ) {
             Divider().padding(.vertical, 4)
             HStack(alignment: .center,spacing: 10) {
@@ -32,6 +32,20 @@ struct SettingsView: View {
           }
           .padding()
           // MARK: - SECTION 2
+
+
+          GroupBox(label:
+            SettingsLabelView(labelText: "Application", labelImage: "apps.iphone")
+          ) {
+            SettingsRowView(name: "Developer", content: "Tran Loi")
+            SettingsRowView(name: "Designer", content: "Robert Petras")
+            SettingsRowView(name: "Compatibility", content: "IOS 16.2")
+            SettingsRowView(name: "Github", linkLabel: "Iwy2th", linkDestination: "github.com/iwy2th")
+            SettingsRowView(name: "Twitter", linkLabel: "@TL_Iwy2th", linkDestination: "twitter.com/TL_Iwy2th")
+            SettingsRowView(name: "SwiftUI", content: "4.0")
+            SettingsRowView(name: "Version", content: "14.3")
+
+          }
           // MARK: - SECTION 3
         }//: VSTACK
       } //: SCROLL
